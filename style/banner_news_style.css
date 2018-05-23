@@ -1,0 +1,183 @@
+.container{
+  position: relative;
+  margin: 0;
+  width: 91.5vw;
+  height: 620vh;
+  padding: 0;
+}
+.container .section{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+  /* background-color: #aaa; */
+  /* border: 0.5px solid; */
+}
+.swiper-container {
+  width: 100%;
+  height: 85vh;
+  margin: 0;
+}
+.swiper-container .swiper-wrapper{
+  float: left;
+}
+.swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-wrapper .swiper-slide.swiper_img{
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide.swiper_img.swiper1{
+  background-image: url('../img/swiper1_perform.jpg');
+}
+.swiper-slide.swiper_img.swiper2{
+  background-image: url('../img/swiper2_family.jpg');
+}
+.swiper-slide.swiper_img.swiper3{
+  background-image: url('../img/swiper3_fes booth.jpg');
+}
+.swiper-slide.swiper_img.swiper4{
+  background-image: url('../img/swiper6_street.jpg');
+}
+.swiper-slide.swiper_img.swiper5{
+  background-image: url('../img/swiper5_ntu fes.jpg');
+}
+/* .swiper-slide.swiper_img.swiper6{
+  background-image: url('../img/swiper5_ntu fes.jpg');
+}
+.swiper-slide.swiper_img.swiper7{
+  background-image: url('../img/swiper5_ntu fes.jpg');
+}
+.swiper-slide.swiper_img.swiper8{
+  background-image: url('../img/swiper5_ntu fes.jpg');
+}
+.swiper-slide.swiper_img.swiper9{
+  background-image: url('../img/swiper5_ntu fes.jpg');
+} */
+.swiper-container .swiper-pagination{
+  background-color: rgba(255, 255, 255, 0.6);
+  display: block;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+  transform: translateX(-35%)
+}
+.swiper-container .swiper-button-prev {
+  transform: translate(2vw, -2vh);
+  display: block;
+  padding: 5px 0;
+  background-image: url('');
+}
+.swiper-container .swiper-button-next {
+  transform: translate(-6vw, -2vh);
+  display: block;
+  padding: 5px 0;
+  background-image: url('');
+} 
+
+.container .section .name_block{
+  width: 100%;  
+  height: 15vh;
+  background-color: rgba(215, 239, 255, 1.0);
+}
+.section .name_block h1, .section .name_block h2{
+  line-height: 7vh;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+  transform: translate(4vw, 0);
+}
+.section .name_block h1{
+  font-size: 36px;
+  letter-spacing: 10px;
+  line-height: 7vh;
+  padding-top: 1.5vh;
+}
+.section .name_block h2{
+  font-size: 24px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 6vh;
+}
+h1{ 
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+}
+.container .section.bgi{
+  position: relative;
+  z-index: -5;
+  background-color: #fdd;
+}
+.container .section .section_title{
+  width: 60px;
+  height: 250px;
+  background-color: rgba(191, 6, 6, 1.0);
+  position: absolute;
+  top: 10vh;
+  left: 10.4vw;
+  z-index: 3;
+  writing-mode: vertical-rl;
+  line-height: 55px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}
+.container .section .section_content{
+  width: 78vw;
+  height: 80vh;
+  position: absolute;
+  left: 9vw;
+  top: 10vh;
+  /* background-color: #ffd; */
+}
+.container .section .section_small_title ul{
+  width: 400px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  transform: translateX(8vw);
+  margin-top: 25px;
+  position: relative;
+  z-index: 2;
+}
+.container .section .section_small_title ul li{
+  list-style: none;
+  font-size: 30px;
+  line-height: 48px;
+  display: inline-block;
+  padding: 0;
+  margin: 0 25px;
+  border-bottom: 3px solid;
+  color: rgba(147, 0, 0, 1.0);
+}
+.container #news.section p{
+  position: relative;
+  left: 8vw;
+  top: 5vh;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 5px;
+  color: rgba(147, 0, 0, 1.0);
+}
+.container #news.section p span{
+  margin-left: 50px;
+}
