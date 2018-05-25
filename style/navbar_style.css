@@ -15,6 +15,7 @@ html, body{
 	right: 0;
 	z-index: 5;
 	padding: 12.4vh 0;
+	/* display: none; */
 }
 .navbar ul{
 	width: 100%;
@@ -48,4 +49,115 @@ html, body{
 }
 .navbar .btn.icon5{
 	margin-bottom: 2.5vh;
+}
+.navbar_mobile{
+	width: 100vw;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	background-color: rgba(16, 22, 68, 1.0);
+	z-index: 5;
+	display: none;
+}
+.navbar_mobile .navbar_mobile_content{
+	width: 100vw;
+	height:100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navbar_mobile .navbar_mobile_content .logo{
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	overflow: hidden;
+	background-color: rgba(255, 235, 161, 1.0);
+	flex-basis: 70px;
+}
+.navbar_mobile .navbar_mobile_content .logo .btn{
+	width: 80vw;
+}
+.navbar_mobile .navbar_mobile_content h1{
+	color: rgba(239, 239, 239, 1.0);
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 10px;
+	margin: 0;
+	padding: 0;
+}
+.navbar_mobile .navbar_mobile_content .collapse_btn{
+	width: 40px;
+	line-height: 40px;
+	font-size: 40px;
+	display: inline-block;
+	color: rgba(239, 239, 239, 1.0);
+}
+.navbar_mobile .mobile_menu_list {
+	width: 90vw;
+	height: 0;     /*height:auto;*/
+	background-color: rgba(223, 233, 239, 1.0);
+	position: relative;
+	left:10vw;
+	transition-duration: 1s;
+	transition-delay: 0.2s;
+}
+.navbar_mobile .mobile_menu_list .close_btn{
+	width: 40px;
+	line-height: 40px;
+	font-size: 40px;
+	position: absolute;
+	top:-10vh;
+	right: 8vw;
+	transform: translate(50%,25%);
+	color: rgba(239, 239, 239, 1.0);
+}
+.navbar_mobile .mobile_menu_list ul{
+	margin: 0;
+	padding: 15px 10px 0 25px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.navbar_mobile .mobile_menu_list >ul >li{
+	list-style: none;
+}
+.navbar_mobile .mobile_menu_list > ul >li a{
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-decoration: none;
+}
+.navbar_mobile .mobile_menu_list > ul >li a img{
+	width: 50px;
+	height: 50px;
+	display:inline-block;
+	color: rgba(16, 22, 68, 1.0);
+	margin: 0;
+	padding: 0;
+	margin-right: 20px; 
+}
+.navbar_mobile .mobile_menu_list > ul >li a h1{
+	line-height: 50px;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	transform: translateY(-33%);
+	color: rgba(16, 22, 68, 1.0);
+}
+.navbar_mobile .mobile_menu_list > ul >li >ul{
+	padding: 0;
+	margin: 0;
+}
+.navbar_mobile .mobile_menu_list > ul >li >ul >li{
+	list-style: square;
+	padding: 0;
+	margin-left: 100px;
+	transform: translateY(-50%);
+}
+.navbar_mobile .mobile_menu_list > ul >li >ul >li h2{
+	padding: 0;
+	margin: 0;
+	line-height: 28px;
 }
