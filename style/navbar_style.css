@@ -47,6 +47,11 @@ html, body{
 	margin-bottom: 4.5vh;
 	background-color: rgba(255, 235, 161, 1.0);
 }
+.navbar .btn.logo img{
+	width: 92%;
+	height: auto;
+	transform: translateY(5%)
+}
 .navbar .btn.icon5{
 	margin-bottom: 2.5vh;
 }
