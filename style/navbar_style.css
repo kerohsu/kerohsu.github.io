@@ -15,7 +15,7 @@ html, body{
 	right: 0;
 	z-index: 5;
 	padding: 12.4vh 0;
-	/* display: none; */
+	display: none;
 }
 .navbar ul{
 	width: 100%;
@@ -62,7 +62,7 @@ html, body{
 	top: 0;
 	background-color: rgba(16, 22, 68, 1.0);
 	z-index: 5;
-	display: none;
+	/* display: none; */
 }
 .navbar_mobile .navbar_mobile_content{
 	width: 100vw;
@@ -79,8 +79,10 @@ html, body{
 	background-color: rgba(255, 235, 161, 1.0);
 	flex-basis: 70px;
 }
-.navbar_mobile .navbar_mobile_content .logo .btn{
-	width: 80vw;
+.navbar_mobile .navbar_mobile_content .logo img{
+	width: 92%;
+	height: auto;
+	transform: translateY(5%)
 }
 .navbar_mobile .navbar_mobile_content h1{
 	color: rgba(239, 239, 239, 1.0);
@@ -99,7 +101,8 @@ html, body{
 }
 .navbar_mobile .mobile_menu_list {
 	width: 90vw;
-	height: 0;     /*height:auto;*/
+	height: 0;     height:auto;
+	overflow: hidden;
 	background-color: rgba(223, 233, 239, 1.0);
 	position: relative;
 	left:10vw;
@@ -113,8 +116,10 @@ html, body{
 	position: absolute;
 	top:-10vh;
 	right: 8vw;
+	z-index: 30;
 	transform: translate(50%,25%);
 	color: rgba(239, 239, 239, 1.0);
+	background-color: #fff;
 }
 .navbar_mobile .mobile_menu_list ul{
 	margin: 0;
